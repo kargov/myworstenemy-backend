@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Source: lds_web_client -->
+
+<configuration debug="true">
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} {lds_web_client} {%thread} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ===================== -->
+    <!-- Package restrictions -->
+    <!-- ===================== -->
+    <logger name="com.ned.admitone">
+        <level value="DEBUG" />
+    </logger>
+
+    <!-- Spring -->
+    <logger name="org.springframework">
+        <level value="ERROR" />
+    </logger>
+
+    <!-- Hibernate -->
+    <logger name="org.hibernate">
+        <level value="ERROR" />
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
