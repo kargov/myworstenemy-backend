@@ -13,7 +13,7 @@
     <!-- ===================== -->
     <!-- Package restrictions -->
     <!-- ===================== -->
-    <logger name="com.ned.admitone">
+    <logger name="com.ned.myworstenemy">
         <level value="DEBUG" />
     </logger>
 
